@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html >
+
+<head>
+  <meta charset="UTF-8">
+  <title>ML API</title>
+  <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Arimo' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Hind:300' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+
+  
+</head>
+
+<body>
+ <div class="login">
+	<h1>Credit Card Fraud or Not</h1>
+
+     <!-- Main Input For Receiving Query to our ML -->
+    <form action="{{ url_for('predict')}}"method="post">
+        <input type="int" name="Unnamed: 0" placeholder="Unnamed: 0" required="required" /><br>
+        <input type="text" name="Transaction date and time" placeholder="Transaction date and time" required="required" /><br>
+    	<input type="float" name="Credit card number" placeholder="Credit card number" required="required" /><br>
+        <input type="text" name="Merchant" placeholder="Merchant" required="required" /><br>
+        <input type="text" name="Category" placeholder="Category" required="required" /><br>
+        <input type="float" name="Amount" placeholder="Amount" required="required" /><br>
+        <input type="text" name="First" placeholder="First" required="required" /><br>
+        <input type="text" name="Last" placeholder="Last" required="required" /><br>
+        <input type="text" name="Gender" placeholder="Gender" required="required" /><br>
+        <input type="text" name="Street" placeholder="Street" required="required" /><br>
+        <input type="text" name="City" placeholder="City" required="required" /><br>
+        <input type="text" name="State" placeholder="State" required="required" /><br>
+        <input type="int" name="Zip" placeholder="Zip" required="required" /><br>
+        <input type="float" name="Lat" placeholder="Lat" required="required" /><br>
+        <input type="float" name="Long" placeholder="Long" required="required" /><br>
+        <input type="int" name="City Population" placeholder="City Population" required="required" /><br>
+        <input type="text" name="Job" placeholder="Job" required="required" /><br>
+        <input type="text" name="Date of birth" placeholder="Date of birth" required="required" /><br>
+        <input type="text" name="Transaction number" placeholder="Transaction number" required="required" /><br>
+        <input type="int" name="Unix time" placeholder="Unix time" required="required" /><br>
+        <input type="float" name="Merchant latitude" placeholder="Merchant latitude" required="required" /><br>
+        <input type="float" name="Merchant longitude" placeholder="Merchant longitude" required="required" /><br>
+        
+
+       
+
+        <button type="submit" class="btn btn-primary btn-block btn-large">Predict</button>
+    </form>
+
+   <br>
+   <br>
+  
+   
+ </div>
+ {{prediction_text}}
+
+</body>
+</html>

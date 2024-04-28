@@ -1,0 +1,23 @@
+{
+    "amt": 77.07,
+    "city_pop": 6951,
+    "category_food_dining": 0,
+    "category_gas_transport": 1,
+    "category_grocery_net": 0,
+    "category_grocery_pos": 0,
+    "category_health_fitness": 0,
+    "category_home": 0,
+    "category_kids_pets": 0,
+    "category_misc_net": 0,
+    "category_misc_pos": 0,
+    "category_personal_care": 0,
+    "category_shopping_net": 0,
+    "category_shopping_pos": 0,
+    "category_travel": 0,
+    "gender_M": 0,
+    "cluster_0": 1,
+    "cluster_22": 0,
+    "cluster_7": 0,
+    "cluster_4": 0,
+    "merch_cluster_0": 1
+}
